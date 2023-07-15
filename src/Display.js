@@ -35,6 +35,7 @@ const Display = () => {
             <Row >
                 <Col xs="3" className='Intro'>
                     <h1>Pokémon Search</h1>
+                    <h5>Type any pokemon's name to learn about them</h5>
                     {/* <div> */}
                         <input
                             type="text"
@@ -47,6 +48,10 @@ const Display = () => {
                         <br />
 
                         <Button className='SearchButton hoverEff' onClick={handleRandom}>Random Pokémon</Button>
+                        {/* <br /> */}
+                        <div fluid className='Info'>
+                        <span><a className='unstyled Info' href='https://pokeapi.co/'>Data brought to you by PokeAPI</a></span>
+                        </div>
                     {/* </div> */}
                 </Col>
                 <Col xs="3">
